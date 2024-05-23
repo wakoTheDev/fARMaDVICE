@@ -1,0 +1,143 @@
+.head_style{
+    width: 90%;
+    background-color: rgb(12, 199, 12);
+    text-align: left;
+    color:goldenrod;
+    border-radius: 0 0 5px 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    margin: auto;
+    padding: auto;
+}
+
+.head_style h1{
+    margin-left: 2%;
+}
+
+.main_menu{
+    width: 90%;
+    display: flex;
+    padding: 1%;
+    margin: auto;
+    align-content: space-around;
+}
+.main_menu section{
+    width: 30%;
+    color: black;
+    background-color: hsl(0, 0, 100%);
+    margin: auto 3% auto auto;
+    text-align: center;
+    font-weight: bold;
+}
+hr{
+    width: 90%;
+    height: 5px;
+    opacity: 0.1;
+    margin: 4px auto;
+}
+.navigation{
+    width:25%;
+    border-right: 1px solid rgb(204, 183, 183);
+    /* border-top: 1px solid rgb(204, 183, 183) ; */
+    padding: 2%;
+}
+.navigation article{
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+}
+
+.schedule-form{
+    width: 50%;
+    margin: auto;
+    /* text-align: center; */
+}
+.schedule-form h3{
+    text-align: center;
+}
+.schedule-form input{
+    width: 100%;
+    padding: 1%;
+    border: 2px solid rgba(209, 204, 204, 0.096);
+    
+}
+.schedule-form button{
+    text-align: center;
+    padding: 1%;
+    width: 50%;
+    background-color: darkblue;
+    color: white;
+    margin: 5px 23% ;
+}
+h2
+
+.schedule-form label{
+    padding: 1%;
+    font: caption;
+}
+.btn {
+    width: 30%;
+    border: none;
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    margin:5px;
+}
+.alignment{
+    align-content: last baseline;
+    justify-content: last baseline;
+}
+.round-btn{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+#stop{
+    background-color: red;
+}
+#begin{
+    background-color: rgba(47, 147, 47, 0.861);
+    
+}
+#begin:hover{
+    box-shadow:0 0 0 0 rgba(47, 147, 47, 0.861);
+    transform:scale(1);
+    animation: pulse 0.4s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(47, 147, 47, 0.861);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(40, 102, 40, 0.861);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(144, 209, 144, 0.861);
+    }
+}
+
+.page-end{
+    margin-left: 500px;
+    height: 1.8em;
+    border-radius: 0.3em;
+}
+    
+.pipe-pressure   {
+        box-shadow:0 0 0 0 rgba(47, 147, 47, 0.861);
+        width: 50px;
+        height: 30px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transform:scale(1);
+        animation: pulse 1.3s infinite;
+}
+.system-button{
+    width: fit-content;
+}
