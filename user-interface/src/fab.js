@@ -1,9 +1,33 @@
+import { useState,useEffect,useRef } from 'react';
 import React from "react";
-import image from './chat.png'
+import chat from './chat.png'
+// import close from './close.png'
+// import UserInterface from './chatbot';
+import ChatbotUI from './newchatbot'
 const Fab = () =>{
+    const [currentComponent, setCurrentComponent] = useState(false);
+    const [fixedTop, setFixedTop] = useState(0);
+  
+
+    const getComponent = () => {
+        setCurrentComponent(!currentComponent);
+    };
+    const positionRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          setFixedTop('40%'); 
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll); 
+      }, []);
+    
+  
     return(
-        <div style={{width:'50px',height:'50px', borderRadius:'5px',position:'absolute',top:'90%',left:'90%',zIndex:'1'}}>
-            <img src={image} alt="" width={'100%'} height={'100%'}/>
+        <div ref={positionRef}style={{width:'200px',minHeight:'250px', borderRadius:'5px',position:'fixed',top:fixedTop,left:'75%',zIndex:'1'}}>
+            {currentComponent ? <ChatbotUI getComponent={getComponent}/>:<img src={chat} alt="" style={{width:'25%',height:'20%',position:'absolute',top:'80%',left:'75%',zIndex:2}} onClick={()=>{getComponent()}}/>}
+            
         </div>
     );
 }

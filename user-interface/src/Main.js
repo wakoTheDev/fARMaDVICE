@@ -1,11 +1,11 @@
-import Schedule from './schedule'
+import React from 'react';
 
-
-
-const Main = () =>{
-    return <section style={{with:'500px',minHeight:'300px ',boxSizing:'border-box'}}>
-<Schedule/>
-    </section>
+const Main = (props) =>{
+    return (        
+            <section style={{with:'500px',minHeight:'300px ',boxSizing:'border-box'}}>
+            {props.component}
+            </section>    
+    );
 }
 
 
