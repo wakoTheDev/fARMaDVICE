@@ -112,22 +112,25 @@ const ChatbotUI = ({getComponent}) => {
         ))}
       </div>
     </div>
-    <div className="input-section" style={{ position: 'absolute', bottom: 0, left: '75%', width: '100%',marginTop:'4px'}}>
-        <input
+    <div className="input-section" style={{width: '250px',marginTop:'10px',display:'flex'}}>
+        <div style={{width:'72%',minHeightheight:'25px', marginRight:'1%'}}>
+          <input
           ref={inputRef}
           type="text"
           placeholder="Type your message..."
           value={userInput}
           onChange={handleInputChange}
-          style={{width:'15%'}}
-        />
+          style={{width:'100%',height:'100%'}}
+        /></div>
         
-        <button onClick={handleSendMessage}>
-        <img src={message} alt='camera icon' style={{width:'10px',height:'10px'}}/>
-        </button>
-        <button onClick={handleImageUpload}>
-          <img src={camera} alt='camera icon' style={{width:'10px',height:'10px'}}/>
-        </button>
+        <div style={{width:'24%',height:'25px',marginLeft:'3%', display:'flex'}}>
+          <button onClick={handleSendMessage}style={{width:'48%',height:'100%' ,margin:'auto 1%'}}>
+            <img src={message} alt='camera icon' style={{width:'100%'}}/>
+          </button>
+          <button onClick={handleImageUpload} style={{width:'48%',height:'100%' ,objectFit:'cover'}}>
+            <img src={camera} alt='camera icon' style={{width:'100%'}}/>
+         </button>
+        </div>
       </div>
   </>
   );
