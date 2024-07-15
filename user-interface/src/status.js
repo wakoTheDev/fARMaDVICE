@@ -9,7 +9,7 @@ const Status = () =>{
     }
     return <>
     
-        <div style={{width:'65vw',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
+        <div style={{width:'60vw',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
         <section style={{width:'100%',display:'flex',padding:'5px',alignContent:'space between'}}>
                 <section style={{width:'25%',padding:'2px',fontSize:'0.8em',}}><p>Farm name:</p></section>
                 <section style={{width:'25%',padding:'2px',fontSize:'0.8em'}}><p>Duration:</p></section>
@@ -28,7 +28,7 @@ const Status = () =>{
         <button className='btn' style={{height:"30px",borderRadius:"4px"}}>Dectivate</button>
         </section>
         </div>
-        <div style={{width:'65vw',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
+        <div style={{width:'60vw',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
         <section style={{width:'100%',display:'flex',padding:'5px',alignContent:'space between'}}>
                 <section style={{width:'25%',padding:'2px',fontSize:'0.8em',}}><p>Farm name:</p></section>
                 <section style={{width:'25%',padding:'2px',fontSize:'0.8em' }}><p>Duration:</p></section>
@@ -47,7 +47,7 @@ const Status = () =>{
         <button className='btn' style={{height:"30px",borderRadius:"4px"}}>Dectivate</button>
         </section>
         </div>
-        <div style={{width:'65vw',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
+        <div style={{width:'60vw',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
         <section style={{width:'100%',display:'flex',padding:'5px',alignContent:'space between'}}>
                 <section style={{width:'25%',padding:'2px',fontSize:'0.8em',}}><p>Farm name:</p></section>
                 <section style={{width:'25%',padding:'2px',fontSize:'0.8em' }}><p>Duration:</p></section>
