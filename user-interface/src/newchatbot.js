@@ -4,9 +4,10 @@ import camera from './camera_icon.png'
 import close from './close.png'
 import {
   GoogleGenerativeAI,
-  HarmCategory,
-  HarmBlockThreshold,
+  
 } from "@google/generative-ai";
+// HarmCategory,
+//  HarmBlockThreshold,
 
 const ChatbotUI = ({getComponent}) => {
   const [messages, setMessages] = useState([]);
@@ -93,9 +94,9 @@ const ChatbotUI = ({getComponent}) => {
 
   return (
   <>
-  <img src={close} alt="close" style={{width:'5.5%',height:'5.5%',position:'relative',top:'0',left:'90%'}} onClick={()=>{getComponent()}}/>
-  <div className="chat-container" style={{width:'100%',height:'100%',position:'relative',padding:'5px'}}>
-      <div className="chat-section" ref={chatRef} style={{width:'90%',height:'200px'}}>
+  <img src={close} alt="close" style={{width:'5.5%',height:'5.5%',position:'relative',top:'0',left:'95%'}} onClick={()=>{getComponent()}}/>
+  <div className="chat-container" style={{width:'250px',height:'100%',position:'relative',padding:'5px'}}>
+      <div className="chat-section" ref={chatRef} style={{width:'100%',height:'200px',border:'2px solid greeen'}}>
         {messages.map((message, index) => (
           <div key={index} className={`chat-message ${message.type}`}>
             {message.type === 'user' && (
@@ -110,7 +111,8 @@ const ChatbotUI = ({getComponent}) => {
           </div>
         ))}
       </div>
-      <div className="input-section" style={{ position: 'fixed', bottom: 0, left: '75%', width: '100%',marginBottom:'4px'}}>
+    </div>
+    <div className="input-section" style={{ position: 'absolute', bottom: 0, left: '75%', width: '100%',marginTop:'4px'}}>
         <input
           ref={inputRef}
           type="text"
@@ -127,7 +129,6 @@ const ChatbotUI = ({getComponent}) => {
           <img src={camera} alt='camera icon' style={{width:'10px',height:'10px'}}/>
         </button>
       </div>
-    </div>
   </>
   );
 };
