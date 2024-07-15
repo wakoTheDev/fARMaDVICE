@@ -9,7 +9,7 @@ const Status = () =>{
     }
     return <>
     
-        <div style={{width:'100%',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
+        <div style={{width:'65vw',padding:'1%',border:'1px solid #cccccc ',margin:'4px'}}>
         <section style={{width:'100%',display:'flex',padding:'5px',alignContent:'space between'}}>
                 <section style={{with:'30%',padding:'2px',fontSize:'0.8em',}}><p>Farm name:</p></section>
                 <section style={{with:'20%',padding:'2px',fontSize:'0.8em',marginLeft:'10px'}}><p>Duration:</p></section>
