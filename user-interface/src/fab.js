@@ -1,4 +1,5 @@
 import { useState,useEffect,useRef } from 'react';
+import "./fab.css"
 import React from "react";
 import chat from './chat.png'
 // import close from './close.png'
@@ -25,7 +26,7 @@ const Fab = () =>{
     
   
     return(
-        <div ref={positionRef}style={{width:'200px',minHeight:'250px', borderRadius:'5px',position:'fixed',top:fixedTop,left:'75%',zIndex:'1'}}>
+        <div ref={positionRef} className='icon_position'>
             {currentComponent ? <ChatbotUI getComponent={getComponent}/>:<img src={chat} alt="" style={{width:'25%',height:'20%',position:'absolute',top:'80%',left:'75%',zIndex:2}} onClick={()=>{getComponent()}}/>}
             
         </div>

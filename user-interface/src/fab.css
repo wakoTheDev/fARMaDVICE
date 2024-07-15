@@ -1,0 +1,9 @@
+.icon_position{
+    position:absolute;
+    left:75%;
+    bottom:10%;
+    zIndex:1;
+    width:200px;
+    min-height:250px;
+    border-radius:5px;
+}
