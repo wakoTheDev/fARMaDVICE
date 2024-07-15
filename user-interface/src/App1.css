@@ -83,6 +83,7 @@ h2
     text-align: center;
     color: white;
     margin:5px;
+    height:15px;
 }
 .alignment{
     align-content: last baseline;

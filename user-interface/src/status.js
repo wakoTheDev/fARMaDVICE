@@ -16,7 +16,7 @@ const Status = () =>{
                 <section style={{with:'20%',padding:'2px',fontSize:'0.8em',marginLeft:'10px'}}><p>Saturation:</p></section>
                 <section style={{with:'10%',padding:'2px',fontSize:'0.8em',marginLeft:'10px'}}><p>Frequency:</p></section>
             </section>   
-        <section style={{width:'100%',display:'flex',padding:'5px'}}>
+        <section style={{width:'100%',display:'flex',padding:'5px',margin:'4px'}}>
             <section  style={{with:'40%',padding:'2px',fontWeight:'bold'}}>{createdSchedule.farmname[0]}</section>
             <section style={{with:'30%',marginTop:'0',marginLeft:'15px',padding:'2px',fontWeight:'bold'}}>{createdSchedule.duration[0]}</section>
             <section style={{with:'20%',marginTop:'0',marginLeft:'40px',padding:'2px',fontWeight:'bold'}}>{createdSchedule.saturation[0]}</section>
