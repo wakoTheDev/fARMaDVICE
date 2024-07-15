@@ -94,7 +94,7 @@ const ChatbotUI = ({getComponent}) => {
 
   return (
   <>
-  <img src={close} alt="close" style={{width:'5.5%',height:'5.5%',position:'relative',top:'0',left:'95%'}} onClick={()=>{getComponent()}}/>
+  <img src={close} alt="close" style={{width:'5.5%',height:'5.5%',position:'relative',top:'0',left:'230px'}} onClick={()=>{getComponent()}}/>
   <div className="chat-container" style={{width:'250px',height:'100%',position:'relative',padding:'5px'}}>
       <div className="chat-section" ref={chatRef} style={{width:'100%',height:'200px',border:'2px solid greeen'}}>
         {messages.map((message, index) => (
@@ -117,7 +117,7 @@ const ChatbotUI = ({getComponent}) => {
           <input
           ref={inputRef}
           type="text"
-          placeholder="Type your message..."
+          placeholder="Ask me..."
           value={userInput}
           onChange={handleInputChange}
           style={{width:'100%',height:'100%'}}
