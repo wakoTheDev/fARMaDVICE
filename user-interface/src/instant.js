@@ -1,10 +1,12 @@
 const Instant = () =>{
     return <>
-    <button className="btn page-end">Add</button>
-    <form style={{marginLeft:'50px'}}>
+    <div style={{ width:'60vw',margin:'10px'}}>
+        <button style={{marginLeft:'90%'}} className='btn system-button'>Add</button>
+    </div>
+    <form style={{marginLeft:'10px',width:'60vw',padding:'5px'}}>
         <fieldset>
             <caption>Tap&nbsp;details:</caption>
-            <label htmlFor="tapname">Tap &nbsp;Name:</label>
+            <label htmlFor="tapname" >Tap &nbsp;Name:</label>
             <input id="tapname" name="tapname" type="text"/> <br/>
             <label htmlFor="duration">Time: </label>
             <input type="number" id="duration" name="duration"/>

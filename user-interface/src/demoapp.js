@@ -81,7 +81,7 @@ const WeatherDisplay = () => {
         )}
       </div>
 
-      <button onClick={handleRefresh} className='btn'>Refresh</button>
+      <button onClick={handleRefresh} className='btn system-button'>Refresh</button>
     </div>
   );
 };

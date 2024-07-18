@@ -84,6 +84,7 @@ h2
     color: white;
     margin:5px;
     height:15px;
+    border-radius: 4px;
     
 }
 .alignment{
@@ -142,6 +143,7 @@ h2
 }
 .system-button{
     width: fit-content;
+    height: 20px;
 }
 
 

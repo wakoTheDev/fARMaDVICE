@@ -60,7 +60,7 @@ const ChatbotUI = ({getComponent}) => {
     // Send message to model (replace with your actual API call)
 
     const generationConfig = {
-      temperature: 0.6,
+      temperature: 1,
       topP: 0.95,
       topK: 64,
       maxOutputTokens: 8192,
@@ -79,7 +79,7 @@ const ChatbotUI = ({getComponent}) => {
               ...messages,
               {
                 type: 'bot',
-                content:result.response.text(),
+                content: result.response.text(),
               },
             ]);
            }
@@ -100,14 +100,14 @@ const ChatbotUI = ({getComponent}) => {
         {messages.map((message, index) => (
           <div key={index} className={`chat-message ${message.type}`}>
             {message.type === 'user' && (
-              <article style={{boxSizing:'content-box',borderRadius:'8px',backgroundColor:'blue',padding:'3px',position:'relative',right:'0',marginTop:'10px'}}>
+              <article style={{boxSizing:'content-box',borderRadius:'8px',backgroundColor:'hsl(0%,0%,100%)',padding:'3px',position:'relative',right:'0',margin:'5px'}}>
                 <p>{message.content}</p>
                 {message.image && (
                   <img src={message.image} alt="" style={{width:'100px',height:'50px',objectFit:'cover'}} />
                 )}
               </article>
             )}
-            <article style={{boxSizing:'content-box',borderRadius:'8px',backgroundColor:'blue',padding:'3px'}}>{message.type === 'bot' && <p>{message.content}</p>}</article>
+            <article style={{boxSizing:'content-box',borderRadius:'8px',backgroundColor:'white',padding:'3px',margin:'5px'}}>{message.type === 'bot' && <p>{message.content}</p>}</article>
           </div>
         ))}
       </div>

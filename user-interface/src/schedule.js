@@ -45,7 +45,7 @@ const Schedule = () =>{
             <input type="text" name="saturation" id='saturation'/>
             <label htmlFor="frequency">Frequency:</label>
             <input type="number" name="frequency" id='frequency'/>
-            <button type="submit">Submit</button>
+            <button type="submit" className='btn system-button'>Submit</button>
         </form>
     </div>)
 }
